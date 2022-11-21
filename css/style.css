@@ -45,6 +45,10 @@ header div {
   animation-duration: 2; /* don't forget to set a duration! */
 }
 
+header .slogn-in-small-screen {
+  visibility: hidden;
+}
+
 header div p {
   color: #fff;
   font-size: 44px;
@@ -231,6 +235,14 @@ header div .learn-more a:hover i {
 @media screen and (max-width: 500px) {
   header div p {
     font-size: 28px;
+  }
+
+  header .slogn-in-small-screen {
+    visibility: visible;
+  }
+
+  header .slogn-in-large-screen{
+    visibility: hidden;
   }
 
   #about .about-me {
