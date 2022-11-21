@@ -201,4 +201,8 @@ header div .learn-more a:hover i {
   header div p {
     font-size: 28px;
   }
+
+  #about .about-me {
+    font-size: 18px;
+  }
 }
