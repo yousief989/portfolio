@@ -16,29 +16,6 @@ body {
   letter-spacing: 1px;
 }
 
-.title {
-  position: relative;
-  animation-name: backInflipInX;
-  animation-duration: 90s;
-}
-
-@keyframes flipInX {
-  0% {
-    transform: perspective(400px) rotateX(90deg);
-    opacity: 0;
-  }
-  40% {
-    transform: perspective(400px) rotateX(-10deg);
-  }
-  70% {
-    transform: perspective(400px) rotateX(10deg);
-  }
-  100% {
-    transform: perspective(400px) rotateX(0deg);
-    opacity: 1;
-  }
-}
-
 nav {
   background-color: var(--mainBackgroudColor);
 }
