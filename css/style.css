@@ -4,7 +4,8 @@
   --importantColor: #08d665;
 }
 
-body {
+body,
+figure {
   font-family: "Poppins", sans-serif;
   background-color: var(--mainBackgroudColor);
   color: var(--mainColor);
@@ -145,10 +146,6 @@ header div .learn-more a:hover i {
 }
 
 #industries .industry-image .overlay {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -232,7 +229,67 @@ header div .learn-more a:hover i {
   margin-left: 15px;
 }
 
-@media screen and (max-width: 500px) {
+div#clients-logos {
+  width: 100%;
+  overflow: hidden;
+}
+figure.slider {
+  position: relative;
+  width: 200%;
+  font-size: 0;
+  animation: 25s slidy infinite;
+}
+figure.slider figure {
+  width: 10%;
+  height: auto;
+  display: inline-block;
+  position: inherit;
+  text-align: center;
+}
+
+figure.slider img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: -20%;
+  }
+  20% {
+    left: -40%;
+  }
+  30% {
+    left: -60%;
+  }
+  40% {
+    left: -80%;
+  }
+  50% {
+    left: -100%;
+  }
+  60% {
+    left: -80%;
+  }
+  70% {
+    left: -60%;
+  }
+  80% {
+    left: -40%;
+  }
+  90% {
+    left: -20%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 628px) {
   header div p {
     font-size: 28px;
   }
@@ -241,7 +298,7 @@ header div .learn-more a:hover i {
     visibility: visible;
   }
 
-  header .slogn-in-large-screen{
+  header .slogn-in-large-screen {
     visibility: hidden;
   }
 
@@ -261,5 +318,10 @@ header div .learn-more a:hover i {
 
   #contact .contact-card p {
     font-size: 16px;
+  }
+
+  figure.slider img {
+    width: 60px;
+    height: 60px;
   }
 }
